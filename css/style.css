@@ -1,64 +1,170 @@
+/* IT 4403 Course Website
+   Kaleb Tura
+   Data Analytics Major
+*/
+
+/* Basic page setup */
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    color: #222222;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f8fa;
+    color: #1f2937;
     line-height: 1.6;
 }
 
-header,
-main,
-footer {
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;
-}
-
+/* Header */
 header {
-    padding-top: 50px;
-    padding-bottom: 25px;
+    background-color: #12355b;
+    color: white;
+    padding: 35px 10%;
 }
 
 header h1 {
-    margin-bottom: 5px;
+    margin: 0;
+    font-size: 36px;
 }
 
+header p {
+    margin: 5px 0 0;
+    color: #d9edf7;
+    font-size: 17px;
+}
+
+/* Navigation */
+nav {
+    background-color: #0b2545;
+    padding: 0 10%;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 18px;
+}
+
+nav a:hover {
+    background-color: #159a9c;
+}
+
+/* Main content */
+main {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 0 25px;
+}
+
+/* Sections */
 section {
-    margin-top: 30px;
+    background-color: white;
+    margin-bottom: 22px;
+    padding: 25px;
+    border: 1px solid #dbe3e8;
+    border-radius: 7px;
 }
 
-h1 {
-    font-size: 32px;
+section h2 {
+    margin-top: 0;
+    color: #12355b;
+    border-bottom: 2px solid #159a9c;
+    padding-bottom: 8px;
 }
 
-h2 {
-    font-size: 23px;
-    margin-bottom: 10px;
+/* Paragraphs */
+p {
+    font-size: 16px;
 }
 
+/* Links */
 a {
-    color: #4b4bb7;
+    color: #1769aa;
 }
 
 a:hover {
+    color: #159a9c;
+}
+
+/* Quick links */
+.quick-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.quick-links a {
+    background-color: #e8f3f8;
+    border: 1px solid #bdd9e5;
+    border-radius: 5px;
+    padding: 12px 18px;
     text-decoration: none;
+    font-weight: bold;
 }
 
-ul {
-    padding-left: 30px;
+.quick-links a:hover {
+    background-color: #159a9c;
+    color: white;
 }
 
+/* Disclaimer */
+.disclaimer {
+    background-color: #f1f8f8;
+    border-left: 4px solid #159a9c;
+}
+
+/* Footer */
 footer {
+    background-color: #12355b;
+    color: white;
+    text-align: center;
+    padding: 18px;
     margin-top: 40px;
-    padding-bottom: 30px;
-    color: #555555;
 }
 
-@media (max-width: 600px) {
-    header,
-    main,
-    footer {
-        padding-left: 15px;
-        padding-right: 15px;
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Mobile devices */
+@media (max-width: 700px) {
+
+    header {
+        padding: 25px 20px;
+    }
+
+    header h1 {
+        font-size: 29px;
+    }
+
+    nav {
+        padding: 0;
+        text-align: center;
+    }
+
+    nav a {
+        padding: 12px 10px;
+        font-size: 14px;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .quick-links {
+        flex-direction: column;
+    }
+
+    .quick-links a {
+        width: 100%;
     }
 }
