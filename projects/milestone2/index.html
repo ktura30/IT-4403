@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book Search | Kaleb Tura</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="search">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header>
+    <p class="eyebrow">KALEB TURA / OPEN LIBRARY</p>
+    <nav aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="bookshelf.html">My Bookshelf</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="intro">
+      <p class="eyebrow">INDIVIDUAL PROJECT · MILESTONE 2</p>
+      <h1>Find your next book</h1>
+      <p>Search Open Library by title, author, or topic.</p>
+    </section>
+
+    <form id="search-form">
+      <label for="search-term">Search terms</label>
+      <div class="search-row">
+        <input
+          id="search-term"
+          name="q"
+          type="search"
+          placeholder="Try data analysis or music"
+          maxlength="200"
+        >
+        <button type="submit">Search</button>
+      </div>
+    </form>
+
+    <p id="status" role="status" aria-live="polite">
+      Enter a search term to begin.
+    </p>
+
+    <div id="pagination" hidden>
+      <label for="page-select">Page</label>
+      <select id="page-select"></select>
+      <span>10 books per page · up to 60 results</span>
+    </div>
+
+    <section
+      id="results"
+      class="book-grid"
+      aria-label="Search results"
+    ></section>
+
+    <noscript>
+      <p>Please enable JavaScript to load books from Open Library.</p>
+    </noscript>
+  </main>
+
+  <footer>
+    Kaleb Tura · IT-4403 · Kennesaw State University<br>
+    Book information and covers provided by Open Library.
+  </footer>
+</body>
+</html>
